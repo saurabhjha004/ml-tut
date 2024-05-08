@@ -1,3 +1,11 @@
 from numpy import random
-x = random.randint(100)
+x = random.randint(100, size=(5))
 print(x)
+x1 = random.choice([3, 5, 7, 9], size=(3, 5))
+print(x1)
+y = random.rand(5)
+print(y)
+z = random.randint(100, size=(3, 5))
+print(z)
+z1 = random.rand(3, 5)
+print(z1)
