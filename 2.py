@@ -26,3 +26,53 @@ sns.distplot([0, 1, 2, 3, 4, 5])
 plt.show()
 sns.distplot([0, 1, 2, 3, 4, 5], hist=False)
 plt.show()
+
+#Normal Distribution
+a = random.normal(size=(2, 3))
+print(a)
+a1 = random.normal(loc=1, scale=2, size=(2, 3))
+print(a1)
+sns.distplot(random.normal(size=1000), hist=False)
+plt.show()
+
+#Binomial Distribution
+b = random.binomial(n=10, p=0.5, size=10)
+print(b)
+sns.distplot(random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
+plt.show()
+
+#comparison between normal and binomial distribution
+sns.distplot(random.normal(loc=50, scale=5, size=1000), hist=False, label='normal')
+sns.distplot(random.binomial(n=100, p=0.5, size=1000), hist=False, label='binomial')
+plt.show()
+
+#Poisson Distribution
+c = random.poisson(lam=2, size=10)
+print(c)
+sns.distplot(random.poisson(lam=2, size=1000), kde=False)
+plt.show()
+#comparison between normal and poisson distribution
+sns.distplot(random.normal(loc=50, scale=7, size=1000), hist=False, label='normal')
+sns.distplot(random.poisson(lam=50, size=1000), hist=False, label='poisson')
+plt.show()
+#comparison between poisson and binomial distribution
+sns.distplot(random.binomial(n=1000, p=0.01, size=1000), hist=False, label='binomial')
+sns.distplot(random.poisson(lam=10, size=1000), hist=False, label='poisson')
+plt.show()
+
+#Uniform Distribution
+d = random.uniform(size=(2, 3))
+print(d)
+sns.distplot(random.uniform(size=1000), hist=False)
+plt.show()
+
+#Logistic Distribution
+e = random.logistic(loc=1, scale=2, size=(2, 3))
+print(e)
+sns.distplot(random.logistic(size=1000), hist=False)
+plt.show()
+
+#comparison between uniform and logistic distribution
+sns.distplot(random.normal(scale=2, size=1000), hist=False, label='normal')
+sns.distplot(random.logistic(size=1000), hist=False, label='logistic')
+plt.show()
