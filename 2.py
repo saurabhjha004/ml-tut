@@ -76,3 +76,26 @@ plt.show()
 sns.distplot(random.normal(scale=2, size=1000), hist=False, label='normal')
 sns.distplot(random.logistic(size=1000), hist=False, label='logistic')
 plt.show()
+
+#multinomial distribution
+f = random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
+print(f)
+
+#exponential distribution
+g = random.exponential(scale=2, size=(2, 3))
+print(g)
+sns.distplot(random.exponential(size=1000), hist=False)
+plt.show()
+
+#chi square distribution
+h = random.chisquare(df=2, size=(2, 3))
+print(h)
+sns.distplot(random.chisquare(df=1, size=1000), hist=False)
+plt.show()
+
+#Rayleigh Distribution
+i = random.rayleigh(scale=2, size=(2, 3))
+print(i)
+sns.distplot(random.rayleigh(size=1000), hist=False)
+plt.show()
+
