@@ -99,3 +99,15 @@ print(i)
 sns.distplot(random.rayleigh(size=1000), hist=False)
 plt.show()
 
+#pareto distribution
+j = random.pareto(a=2, size=(2, 3))
+print(j)
+sns.distplot(random.pareto(a=2, size=1000), kde=False)
+plt.show()
+
+#Zipf distribution
+k = random.zipf(a=2, size=(2, 3))
+print(k)
+x = random.zipf(a=2, size=1000)
+sns.distplot(x[x<10], kde=False)
+plt.show()
