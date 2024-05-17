@@ -96,12 +96,14 @@ arr = np.array([5, 6, 7, 8])
 newarr = np.cumprod(arr) #cummulative products
 print(newarr)
 
+#doing difference
 arr = np.array([10, 15, 25, 5])
 newarr = np.diff(arr)
 print(newarr)
 newarr = np.diff(arr, n=2)
 print(newarr)
 
+#applying trigonometric functions
 x = np.sin(np.pi/2)
 print(x)
 arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
@@ -123,6 +125,7 @@ perp = 4
 x = np.hypot(base, perp)
 print(x)
 
+#doing hyperbolic functions
 x = np.sinh(np.pi/2)
 print(x)
 arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
@@ -134,6 +137,7 @@ arr = np.array([0.1, 0.2, 0.5])
 x = np.arctanh(arr)
 print(x)
 
+#doing set operations
 arr = np.array([1, 1, 1, 2, 3, 4, 5, 5, 6, 7])
 x = np.unique(arr)
 print(x)
