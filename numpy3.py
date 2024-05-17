@@ -23,6 +23,7 @@ if type(np.add) == np.ufunc:
 else:
   print('add is not ufunc')
 
+#doing arithmetic operations using in-built functions
 arr1 = np.array([10, 11, 12, 13, 14, 15])
 arr2 = np.array([20, 21, 22, 23, 24, 25])
 newarr = np.add(arr1, arr2)
@@ -45,6 +46,7 @@ arr = np.array([-1, -2, 1, 2, 3, -4])
 newarr = np.absolute(arr)
 print(newarr)
 
+#ways of rounding off
 arr = np.trunc([-3.1666, 3.6667])
 print(arr)
 arr = np.fix([-3.1666, 3.6667])
@@ -56,6 +58,7 @@ print(arr)
 arr = np.ceil([-3.1666, 3.6667])
 print(arr)
 
+#doing log operations
 arr = np.arange(1, 10)
 print(np.log2(arr))
 arr = np.arange(1, 10)
@@ -66,6 +69,7 @@ from math import log
 nplog = np.frompyfunc(log, 2, 1)
 print(nplog(100, 15))
 
+# doing summation
 arr1 = np.array([1, 2, 3])
 arr2 = np.array([1, 2, 3])
 newarr = np.add(arr1, arr2)
@@ -75,9 +79,10 @@ print(newarr)
 newarr = np.sum([arr1, arr2], axis=1)
 print(newarr)
 arr = np.array([1, 2, 3])
-newarr = np.cumsum(arr)
+newarr = np.cumsum(arr) #cummulative sum
 print(newarr)
 
+#doing products
 arr = np.array([1, 2, 3, 4])
 x = np.prod(arr)
 print(x)
@@ -88,7 +93,7 @@ print(x)
 newarr = np.prod([arr1, arr2], axis=1)
 print(newarr)
 arr = np.array([5, 6, 7, 8])
-newarr = np.cumprod(arr)
+newarr = np.cumprod(arr) #cummulative products
 print(newarr)
 
 arr = np.array([10, 15, 25, 5])
