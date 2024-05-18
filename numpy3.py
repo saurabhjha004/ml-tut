@@ -103,6 +103,9 @@ print(newarr)
 newarr = np.diff(arr, n=2)
 print(newarr)
 
+#doing lcm
+
+
 #applying trigonometric functions
 x = np.sin(np.pi/2)
 print(x)
