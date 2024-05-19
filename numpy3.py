@@ -104,7 +104,16 @@ newarr = np.diff(arr, n=2)
 print(newarr)
 
 #doing lcm
-
+num1 = 4
+num2 = 6
+x = np.lcm(num1, num2)
+print(x)
+arr = np.array([3, 6, 9])
+x = np.lcm.reduce(arr)
+print(x)
+arr = np.arange(1, 11)
+x = np.lcm.reduce(arr)
+print(x)
 
 #applying trigonometric functions
 x = np.sin(np.pi/2)
