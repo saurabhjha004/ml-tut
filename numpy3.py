@@ -115,6 +115,9 @@ arr = np.arange(1, 11)
 x = np.lcm.reduce(arr)
 print(x)
 
+#doing gcd
+
+
 #applying trigonometric functions
 x = np.sin(np.pi/2)
 print(x)
