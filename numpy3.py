@@ -111,7 +111,7 @@ print(x)
 arr = np.array([3, 6, 9]) #lcm in array
 x = np.lcm.reduce(arr)
 print(x)
-arr = np.arange(1, 11) #contain all integer between 1 to 10
+arr = np.arange(1, 11) #contains all integer between 1 to 10
 x = np.lcm.reduce(arr)
 print(x)
 
