@@ -1,3 +1,8 @@
 import pandas as pd
-df = pd.read_csv('data.csv')
-print(df.to_string())
+mydataset = {
+  'cars': ["BMW", "Volvo", "Ford"],
+  'passings': [3, 7, 2]
+}
+myvar = pd.DataFrame(mydataset)
+print(myvar)
+print(pd.__version__) #checking pandas version
