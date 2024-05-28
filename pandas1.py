@@ -18,8 +18,6 @@ myvar = pd.Series(calories)
 print(myvar)
 myvar = pd.Series(calories, index = ["day1", "day2"])
 print(myvar)
-myvar = pd.DataFrame(data)
-print(myvar)
 data = {
   "calories": [420, 380, 390],
   "duration": [50, 40, 45]
