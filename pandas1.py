@@ -39,3 +39,9 @@ print(df)
 
 df = pd.read_csv('movies.csv')
 print(df.to_string())
+df = pd.read_csv('movies.csv')
+print(df) 
+print(pd.options.display.max_rows) 
+pd.options.display.max_rows = 9999
+df = pd.read_csv('movies.csv')
+print(df)
