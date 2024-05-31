@@ -84,3 +84,10 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df)
+
+df = pd.read_csv('movies.csv')
+print(df.head(10))
+df = pd.read_csv('movies.csv')
+print(df.head())
+print(df.tail())
+print(df.info()) 
