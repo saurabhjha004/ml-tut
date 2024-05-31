@@ -34,7 +34,7 @@ data = {
 df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
 print(df)
 print(df.loc["day2"])
-df = pd.read_csv('data.csv')
+df = pd.read_csv('movies.csv')
 print(df)
 
 df = pd.read_csv('movies.csv')
